@@ -3,6 +3,11 @@ function App() {
     return (
         <Container>
             <Row>
+                <Col>
+                    <h1>to do list!</h1>
+                </Col>
+            </Row>
+            <Row>
                 <Col md={{ offset: 3, span: 6 }}>
                     <TodoListCard />
                 </Col>
@@ -176,9 +181,5 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
         </Container>
     );
 }
-const element = (
-    <h1>
-        to do list!
-    </h1>
-)
-ReactDOM.render(element,<App />, document.getElementById('root'));
+
+ReactDOM.render(<App />, document.getElementById('root'));
