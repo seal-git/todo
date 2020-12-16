@@ -176,5 +176,9 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
         </Container>
     );
 }
-
-ReactDOM.render(<App />, document.getElementById('root'));
+const element = (
+    <h1>
+        to do list!
+    </h1>
+)
+ReactDOM.render(element,<App />, document.getElementById('root'));
