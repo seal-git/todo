@@ -1,9 +1,10 @@
+import React from 'react'
 function App() {
     const { Container, Row, Col } = ReactBootstrap;
     return (
         <Container>
             <Row>
-                <Col>
+                <Col md={{ offset: 3, span: 6 }}>
                     <h1>to do list!</h1>
                 </Col>
             </Row>
